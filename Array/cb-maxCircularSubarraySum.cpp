@@ -7,6 +7,9 @@ int main(){
 		int n;
 		cin>>n;
 		int arr[n];
+		if(n==1){
+        	return arr[0];
+    	}
 		int sum=0;
 		for(int i=0;i<n;i++){
 			cin>>arr[i];
@@ -20,6 +23,11 @@ int main(){
 			currentmax=max(currentmax+arr[i],arr[i]);
 			maxsum=max(currentmax,maxsum);
 		}
-		cout<<max(maxsum,sum-minsum);
+		if(minsum==sum){
+	    		cout<<maxsum;
+		}
+		else{
+			cout<<max(maxsum,sum-minsum);
+		}
 	}
 }
