@@ -21,7 +21,7 @@ int main(){
 			arr[j][i]+=arr[j+1][i];
 		}
 	}
-	int max_sum=0;
+	int max_sum=INT_MIN;
 	for(int i=0;i<m;i++){
 		for(int j=0;j<n;j++){
 			if(max_sum<arr[i][j]){
