@@ -1,19 +1,16 @@
-#include <bits/stdc++.h>
-#define ll long long
-using namespace std;
 vector <int > primeseive(int n){
     int primearray[n]={0};
     vector <int> primelist;
     primelist.push_back(2);
-    for(ll i=3;i<=n;i+=2){
+    for(int i=3;i<=n;i+=2){
         primearray[i]=1;
     }
-     for(ll i=3;i<=n;i+=2)
+     for(int i=3;i<=n;i+=2)
      {
         primelist.push_back(i);
         if(primearray[i]==1)
         {
-            for(ll j=i *i ;j<=n;j=j+i)
+            for(int j=i *i ;j<=n;j=j+i)
             {
                 primearray[j]=0;
             }
@@ -21,7 +18,8 @@ vector <int > primeseive(int n){
     }
     return primelist;
 }
-int noofdivisors(int m, vector <int> primes){
+int noofdivisors(int m){
+    vector <int> primes=primeseive(m);
     int i=0;
     int p=primes[0];
     int ans=1;
@@ -37,17 +35,18 @@ int noofdivisors(int m, vector <int> primes){
         i++;
         p=primes[i];
     }
+    if(m!=1){
+        ans*=2;
+    }
     return ans;
 }
-int main(){
-    int n=1000005;
-    vector <int> primes=primeseive(n);
-    int t;
-    cin>>t;
-    while(t--){
-        int num;
-        cin>>num;
-        cout<<noofdivisors(num,primes)<<endl;
-    }
-    return 0;
+int gcd(int a,int b){
+    return b==0?a:gcd(b,a%b);
+}
+int common_divisor(int a, int b)
+{
+    int m=gcd(a,b);
+    
+    return noofdivisors(m);
+    
 }
