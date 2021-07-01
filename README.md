@@ -8,5 +8,4 @@
 
 `You can pick up ✍ Questions ⚡ to practice and begin`
 <img src="./reamegif.jpg"
-     alt="Markdown Monster icon"
-     style="float: left; margin-left: 10; " />
+alt="Markdown Monster icon">
