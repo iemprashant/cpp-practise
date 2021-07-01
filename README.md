@@ -7,6 +7,6 @@
 > Questions are sorted with respect to Question Tag.
 
 `You can pick up ✍ Questions ⚡ to practice and begin`
-<img src="https://memegenerator.net/img/instances/44706139/algorithm-and-data-structures-lets-do-it.jpg"
+<img src="./reamegif.jpg"
      alt="Markdown Monster icon"
-     style="float: left; margin: 50px; " />
+     style="float: left; margin-left: 10; " />
