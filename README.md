@@ -8,7 +8,5 @@
 
 `You can pick up ✍ Questions ⚡ to practice and begin`
 
-
-
 <img src="./reamegif.jpg"
 alt="Markdown Monster icon">
