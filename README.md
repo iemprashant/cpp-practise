@@ -1,4 +1,4 @@
-## This repository ✉ contains the **DSA Using C++**Practice Questions 🚀
+## This repository ✉ contains the *DSA Using C++* Practice Questions 🚀
 
 > Currently, they are related to learnings from the 🛰 Coding Blocks Algo++ Course and GFG Practice Section
 
